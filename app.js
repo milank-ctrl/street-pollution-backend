@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //get last row
-app.use('/', async(req, res) => {
+app.get('/', async(req, res) => {
 
     try {
         res.status(200).send("Welcome");
