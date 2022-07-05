@@ -36,7 +36,8 @@ router.post('/', async (req, res) => {
     const monitorData = new monitorS ({
         sample_datetime: req.body.sample_datetime,
         pm10: req.body.pm10,
-        pm25: req.body.pm25
+        pm25: req.body.pm25,
+        istest: req.body.istest
     })
 
     try {
